@@ -6,6 +6,23 @@
 </head>
 <style>
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #F8F8F8;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.space {
+  margin-left: 20%;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 blink {
   animation: 1s linear infinite condemned_blink_effect;
 }
@@ -31,9 +48,64 @@ blink {
   font-size: 40px;
   line-height: 50px;
 }
+
+.but-log {
+background-color: #65EAE3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.but-upload {
+  position: absolute;
+  top: 30px;
+  right: 120px;
+  background-color: #5EF86D;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.but-signup {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #FF3935;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.but-login{
+  position: absolute;
+  top: 65px;
+  right: 30px;
+  background-color: #FF6D54;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-signup:hover,
+.btn-login:hover {
+  background-color: #0062cc;
+}
+
 header {
-background-color: #FAE8E7;
-color: #fff;
+background-color: #ECECEC;
+color: #1A4454;
 padding: 20px;}
 .table {
   font-family: arial, sans-serif;
@@ -49,20 +121,38 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+  
+
 }
 </style>
-<header>
-<h1 class="rainbow">Hello to my fun website</h1>
-<h2>This web haven't much sense</h2>
-</header>
-<blink class="dye">This text is hard to read</blink>
+
 <body>
-      <marquee direction="right" scrollamount="10"> <strong> This is cool art <img src="https://i.ibb.co/dQPZzDM/2023-04-09-231333586.png" border="0"></a>
-      </marquee>
+	<div class="menu">
+	<form>
+		<input type="text" placeholder="Search">
+		<button type="submit">►</button>
+		<p>Featured</p>
+		<a href="https://www.youtube.com/watch?v=0530sB2_lrg"><img src="https://i.ibb.co/S74dp3P/Kover.png" border="0" width="200" height="250"></a>
+		<p>Tags</p>
+		<ul>
+		<li><a href="3d">3d animation</a></li>
+		<li><a href="2d">2d animation</a></li>
+		<li><a href="mus">musical</a></li>
+		<li><a href="story">story</a></li>
+		<li><a href="horror">horror</a></li>
+		</ul>
+	</form>
+	</div>
 </body>
-<a href="https://www.youtube.com/watch?v=0530sB2_lrg"><img src="https://i.ibb.co/S74dp3P/Kover.png" border="0" width="500" height="600"></a>
-<p>Click on image to watch cool animation</p>
-<h3>Some other good short animations</h3>
+<div class="space">
+<header>
+<h1>Welcome to<button class="but-log">AKOA</button></h1>
+<h4>"Any kind of animations"</h4>
+<button class="but-upload">Upload</button>
+<button class="but-signup">Sign Up</button>
+<button class="but-login">Log In</button>
+</header>
+<h3>Recommendations</h3>
 <table>
   <tr>
     <th>Image with link</th>
@@ -80,4 +170,5 @@ tr:nth-child(even) {
     <td>김준아 from ChungKang Animation School</td>
   </tr>
 </table>
+</div>
 </html>
